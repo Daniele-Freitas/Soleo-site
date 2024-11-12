@@ -1,0 +1,798 @@
+/*Gerais */
+body{
+  font-family:   'Roboto', sans-serif;
+}
+.row{
+  margin: 0;
+}
+.container{
+  padding: 40px 0px;
+}
+
+p,li{
+  color: #444;
+  font-size:18px ;
+}
+
+header, .navbar{
+  background-color: #390e50;
+}
+#nav-container{
+  padding-top:0 ;
+  padding-bottom:0 ;
+}
+
+#logo{
+  width: 120px;
+}
+
+.navbar-brand{
+  padding: 0;
+  color: #fff;
+  padding-left: 45px;
+}
+
+.navbar-brand:hover{
+  color: #fff;
+}
+#navbar-links a {
+  color: #fff;
+}
+#navbar-links .active-menu{
+  color: #f4b411;
+}
+#navbar-links a:hover{
+  color: #f4b411;
+}
+
+.navbar-expanded-lg .navbar-nav .nav-link{
+  padding:1rem .8rem ;
+}
+
+#item-menu{
+  padding-right: 130px;
+}
+.cor-menu{
+  background-color: #390e50;
+  text-decoration: none;
+}
+
+#navbar-links .dropdown-item:hover{
+  color: #f4b411;
+  background-color: #390e50;
+  box-sizing: border-box;
+}
+.navbar-nav .item-lista{
+  font-size: 10px;
+}
+/*Slider*/
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+  height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+  top: 30%;
+  text-align: left;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: #FFF;
+}
+
+.main-btn {
+  background-color: #f4b411;
+  color: #FFF;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: .5s;
+  text-decoration: none;
+
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: transparent;
+  border-color: #f4b411;
+}
+
+.carousel-indicators .active {
+  background-color: #f4b411;
+}
+.dropdown-link{
+  text-decoration: none;
+}
+
+@media(max-width:1720px){
+  
+  #item-menu{
+      padding-right: 90px;
+  }
+  #mainSlider .carousel-caption h2 {
+      max-width: 720px;
+      font-size: 45px;
+      margin-bottom: 30px;
+  }
+  #mainSlider .carousel-caption p {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 80px;
+      max-width: 720px;
+  }
+}
+#about-area{
+  background-color: #f9f9f9;
+}
+.main-title{
+  color: #390e50;
+  margin: 0 0 65px 0;/*para cima, para direita,para baixo e para esquerda*/
+  font-size: 40px;
+  text-align:center;
+}
+.main-title::after{/*o after e o before sao pseudoclasses que servem para vc criar um elemento antes ou depois do seletor(nesse caso um h1) mas tem que botar o content se n n funciona*/
+      content: "";
+      border-top: 2px solid #f4b411;
+      display: block;/*sem isso nao funciona*/ 
+      width: 15%;
+      right:42.5%;
+      top: 60px;
+      margin: 10px auto 0; /* Centraliza a linha e adiciona margem acima */
+      transition: 1s;
+  }
+
+.about-title{
+  font-size: 18px;
+  margin-top: 10px;
+  color: #390e50;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#about-list{
+  list-style:none;
+  padding-left: 0px;
+}
+#about-list li{
+  line-height: 30px;
+}
+.row-ods{
+margin-right: 40px;
+}
+#p-ods{
+margin-top: 10px;
+margin-bottom: 0px;
+
+}
+.img-ods{
+  height: 140px;
+}
+
+/*SERVIÇOS*/
+#services-area {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+}
+
+.container {
+max-width: 1200px;
+width: 100%;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 20px;
+}
+#services-area .row {
+gap: 50px; /* Ajuste o valor para o espaçamento desejado */
+}
+
+.service-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+margin: 10px;
+width: 100%;
+max-width: 300px;
+margin-bottom: 20px;
+}
+
+.service-btn {
+margin-top: 10px;
+}
+#services-area{
+  background-color: #FFF;
+}
+.service-box{
+  text-align: center;
+  border: solid 1px #cacaca;
+  border-radius: 30px;
+  max-width: 500px;
+}
+.service-box .service-btn{
+  margin-bottom: 30px;
+  display: block;
+  height: auto;
+  width: auto;
+  margin-left: auto;/*essas margens sao para centralizar o botao na div*/
+  margin-right:auto;
+  margin-top: 20px;
+  background-color: transparent;
+  border-color: #fff;
+  color: #FFF;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  text-decoration: none;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+
+}
+.service-box i, .service-box h4{
+  transition: .5s
+}
+.service-box i{/*os icones sao tratados como texto por isso ao aumentar o tamanho da fonte vc aumenta eles*/
+  font-size:36px ;
+  margin-bottom: 20px;
+  color: #390e50;
+  margin-top: 20px;
+}
+.service-box h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.service-box:hover>i,.service-box:hover>h4{/*sempre que o ponteiro do mouse vier na caixa toda o icone vai ser estilizado e tb o p dentro dela o ">" é um seletor que identifca especificamente o item dentro da service box*/
+  color: #f4b411;
+}
+.service-box:hover>button{/*sempre que o ponteiro do mouse vier na caixa toda o icone vai ser estilizado e tb o p dentro dela o ">" é um seletor que identifca especificamente o item dentro da service box*/
+  color: #f4b411;
+  border-color: #f4b411;
+  border: 1.5px solid #f4b411;
+
+}
+.service-box .service-btn:hover{/*sempre que o ponteiro do mouse vier na caixa toda o icone vai ser estilizado e tb o p dentro dela o ">" é um seletor que identifca especificamente o item dentro da service box*/
+  border: 2px solid #f4b411;
+  color: #FFF;
+  background-color: #f4b411;
+  border-color: #f4b411;
+  border: 1.5px solid #f4b411;
+}
+.service-box:hover{
+  border: solid 1px #f4b411;
+}
+.service-box p{
+  font-display: 40%;
+}
+/*Reciclagem*/
+.text-title{
+color: #390e50;
+  margin: 0 0 30px 0;/*para cima, para direita,para baixo e para esquerda*/
+  font-size: 35px;
+  text-align:center;
+}
+#informacao-area li{
+margin-bottom: 10px;
+text-align: justify;
+
+}
+
+.img-reciclagem{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#informacao-area {
+  padding: 20px;
+}
+
+.content-row {
+  margin-bottom: 30px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.text-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+figure {
+  margin-top: 20px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+/*trabalhe conosco*/
+
+#apply-area{
+  height: 450px;
+  background-image: url(/img/fundo.png);
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-attachment: fixed; /* Ativa o efeito parallax */
+}
+#apply-area .container-fluid,#apply-area .row{
+  height: 100%;/*para preencher os 500px da div*/
+}
+#apply-area .apply-box{
+  text-align: center;
+  padding: 50px 50px;
+}
+#company-img{
+  background-image: url(/img/parceria-como-influenciador-digital-1440x720.jpg);
+  background-size: cover;/*para cobrir todo o container*/
+  height: 450px;
+}
+#pattern-img h4,#pattern-img p{
+  color:#fff
+}
+#pattern-img p{
+  margin-bottom: 20px;
+}
+#apply-btn{
+  display: block;
+  height: auto;
+  width: 200px;
+  margin-left: auto;/*essas margens sao para centralizar o botao na div*/
+  margin-right:auto;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: #fff;
+}
+#apply-btn:hover{
+  border-color: #f4b411;
+  background-color: #f4b411;
+}
+
+/*portfolio*/
+
+.project-box{
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+#filter-btn-box{
+  margin-bottom: 50px;
+  text-align: center;
+}
+.project-box .img-fluid{
+  height: 270px;
+  width: 270px;
+}
+#portfolio-area, .filter-btn{
+  color: #390e50;
+  border: 1px solid #f4b411;
+  background-color: transparent;
+  text-transform: none;/*para n pegar o estilo dos outros botoes*/
+  margin: 0 15px;
+  min-width: 100px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;/*alinha o texto no centro do botao*/
+  padding: 0 20px ;
+  
+}
+.filter-btn.active{
+  background-color: #f4b411;
+  color: #FFF;
+  border-color: #f4b411;
+}
+.filter-btn:hover{
+  color: #fff;
+  background-color: #f4b411;
+  border-color: #f4b411;
+}
+
+
+.project-box .img-fluid {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-box p {
+  text-align: center;
+}
+/*maps-area*/
+#maps-area{
+margin-bottom: 50px;
+margin-top: 50px;
+
+}
+#map {
+width: 80%;
+max-width: 800px; 
+height: 450px; 
+margin: 0 auto;
+border-radius: 35px;
+}
+
+/*newsletter*/
+#news-area{
+  text-align: center;
+  background-color: #f9f9f9;
+}
+#news-area p{
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#email-input{
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px;
+  border: 1px solid #f4b411;
+  box-sizing: border-box;
+  width: 40%;
+  height: 40px;
+  display: inline;
+}
+
+#news-btn{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px;
+  background-color: #f4b411;
+  text-transform: uppercase;
+  color: #fff;
+  height: 40px;
+  padding: 0 30px;
+  margin-left: -130px;
+  position: absolute;
+  transition: .5s;
+  border:1px solid #f4b411;
+
+}
+#news-btn:hover{
+  background-color: #fff;
+  color: #f4b411;
+  border-color: #f4b411;
+}
+#call-area{
+  background-color: #f4b411;
+  text-transform: uppercase;
+}
+#call-area .row{
+  display: block;
+  text-align: center;
+}
+#call-area p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  width: auto;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  display: inline;
+  height: 60px;
+  line-height: 60px;
+}
+#call-area #call-btn{
+  background-color: #fff;
+  color: #65daf9;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 30px;
+  height: 50px;
+  width: 90px;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+#call-area .container{
+  padding: 40px 100px;
+}
+/* Call To Action */
+
+#call-area {
+  background-color: #390e50;
+  text-transform: uppercase;
+}
+
+#call-area .container {
+  padding: 40px 100px;
+}
+
+#call-area .row {
+  display: block;
+  text-align: center;
+}
+
+#call-area p {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  display: inline;
+}
+
+#call-area #call-btn {
+  background-color: #FFF;
+  color: #f4b411;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 20px;
+  width: auto;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+
+#contact-area {
+  text-align: center;
+}
+
+.contact-box {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #f4b411;
+}
+
+.contact-box i {
+  color: #390e50;
+  border: solid 1px #390e50;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 16px;
+}
+
+.contact-tile {
+  font-weight: bold;
+  color: #f4b411;
+}
+
+#msg-box p {
+  font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+select{
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+#contact-form .main-btn {
+  width: 120px;
+  height: 50px;
+}
+
+#contact-form .main-btn:hover {
+  color: #f4b411;
+}
+
+/* Copy */
+
+#copy-area {
+  background-color: #390e50;
+}
+
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  margin-bottom: 0;
+  color: #FFF;
+}
+
+#copy-area .container a {
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#copy-area .container a:hover {
+  text-decoration: none;
+  color: #f4b411;
+}
+
+/* responsive */
+@media(max-width: 768px) {
+  
+  /* geral */
+  .container {
+    padding: 20px 0;
+  }
+  
+  /* slider */
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: auto;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 28px;
+  }
+
+  #mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .carousel-caption {
+    left: 10%;
+    right: 10%;
+  }
+  
+  /* reciclagem */
+.img-reciclagem {
+  }
+
+  /* apply */
+  #apply-area .apply-box {
+    padding: 50px 25px;
+  }
+
+  /* news */
+  #news-area p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #email-input {
+    width: 70%;
+  }
+
+  #call-area {
+    margin-top: 30px;
+  }
+
+  #call-area .container {
+    padding: 30px;
+  }
+
+  #call-area p, #call-area #call-btn {
+    font-size: 16px;
+  }
+
+}
+
+
+@media(max-width: 425px) {
+
+  /* slider */
+  #mainSlider {
+    margin-top: 90px;
+  }
+
+  #mainSlider .carousel-caption {
+    top: 5%;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  #mainSlider .carousel-caption p {
+    display: none;
+  }
+
+  .carousel-caption .main-btn {
+    
+    font-size: 14px;
+  }
+
+  /* about */
+  .main-title {
+    font-size: 30px;
+  }
+
+  #about-area img {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* data */
+  .circle-box {
+    width: 50%;
+  }
+
+  #team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  /* apply */
+  #apply-area {
+    height: auto;
+  }
+
+  #company-img {
+    display: none;
+  }
+
+  /* filter */
+  #portfolio-area .filter-btn {
+    margin-bottom: 20px;
+  }
+
+  .project-box {
+    width: 50%;
+  }
+
+  /* news */
+  #news-area .main-title {
+    font-size: 24px;
+  }
+
+  #news-area p {
+    font-size: 16px;
+  }
+
+  #email-input {
+    width: 80%;
+  }
+
+  #call-area p, #call-area #call-btn {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #call-area p, #call-area #call-btn {
+    margin: 0;
+    width: 50%;
+  }
+
+  /* contact */
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+  }
+
+}
