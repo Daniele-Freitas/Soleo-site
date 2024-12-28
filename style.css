@@ -348,7 +348,7 @@ figcaption {
 
 #apply-area{
   height: 450px;
-  background-image: url(/img/fundo.png);
+  background-image: url(img/fundo.png);
   background-size: cover; /* Ajusta a imagem para cobrir toda a div */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -362,7 +362,7 @@ figcaption {
   padding: 50px 50px;
 }
 #company-img{
-  background-image: url(/img/parceria-como-influenciador-digital-1440x720.jpg);
+  background-image: url(img/parceria-como-influenciador-digital-1440x720.jpg);
   background-size: cover;/*para cobrir todo o container*/
   height: 450px;
 }
