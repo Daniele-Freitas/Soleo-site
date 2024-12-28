@@ -219,7 +219,10 @@ width: 100%;
 max-width: 300px;
 margin-bottom: 20px;
 }
-
+.video-reciclagem{
+  width: 560px;
+  height: 315px;
+}
 .service-btn {
 margin-top: 10px;
 }
