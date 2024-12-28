@@ -640,6 +640,23 @@ select{
   text-decoration: none;
   color: #f4b411;
 }
+/* Estilo para a navbar colapsada */
+@media (max-width: 992px) { /* Aplica-se para telas menores que 992px */
+  .collapse.show .nav-item {
+    margin: 0 20px; /* Adiciona margens laterais para os links */
+  }
+
+  .collapse.show .nav-link {
+    text-align: left; /* Alinha os links à esquerda */
+    padding: 10px 0; /* Espaçamento interno vertical para melhorar a aparência */
+  }
+
+  /* Para o dropdown na navbar colapsada */
+  .collapse.show .dropdown-menu {
+    margin-left: 20px; /* Ajusta o dropdown para alinhar com os links */
+    margin-right: 20px; /* Mesma margem lateral do restante dos links */
+  }
+}
 
 /* responsive */
 @media(max-width: 768px) {
@@ -707,11 +724,13 @@ select{
 
   /* slider */
   #mainSlider {
-    margin-top: 90px;
+    margin-top: 115px;
   }
 
   #mainSlider .carousel-caption {
-    top: 5%;
+    top: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   #mainSlider .carousel-caption h2 {
@@ -724,7 +743,7 @@ select{
   }
 
   .carousel-caption .main-btn {
-    
+    margin-left: 30%;
     font-size: 14px;
   }
 
@@ -794,5 +813,53 @@ select{
     border: none;
     margin-bottom: 0;
   }
+  .row-ods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanhos iguais */
+    gap: 10px; /* Espaçamento opcional entre os itens */
+  }
+
+ 
+  .row-ods .col-md-3 {
+    margin: 0; /* Remove margens das divs internas */
+    padding: 0; /* Remove preenchimento das divs internas */
+    flex: 0 0 auto; /* Desativa o comportamento flex padrão */
+  }
+  .img-ods {
+    padding: 0;
+    margin-left:20px;
+  }
+  .video-reciclagem{
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do container */
+    max-width: 100%; /* Garante que não ultrapasse os limites do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove possíveis comportamentos inline indesejados */
+    margin: 0 auto; /* Centraliza a imagem dentro do container, se necessário */
+  }
+  .filter-btn{
+    margin: 10px;
+  }
+  .project-box .img-fluid{
+    width: 200px;
+    height: 200px;
+  }
+  .project-box {
+    display: flex;
+    flex-direction: column; /* Garante que a imagem e o texto fiquem empilhados verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os boxes */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .project-box p {
+    margin: 0; /* Remove margens padrão do texto */
+    padding: 5px; /* Adiciona espaçamento interno ao texto */
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    line-height: 1.5; /* Garante espaçamento suficiente entre linhas */
+  }
+  #map{
+    height: 400px;
+  }
 
 }
+
