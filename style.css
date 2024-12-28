@@ -25,6 +25,25 @@ header, .navbar{
 #logo{
   width: 120px;
 }
+/* Estilo para afastar o botão toggler da lateral */
+.navbar-toggler {
+  margin-right: 20px; /* Afastar do lado direito */
+  border: none; /* Remover a borda padrão do botão */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Borda fina branca translúcida */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno */
+    transition: all 0.3s ease; /* Suaviza a transição do hover */
+}
+
+/* Tornar a cor do ícone toggler mais evidente */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ajustar a cor e o comportamento em hover */
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo branco translúcido ao passar o mouse */
+}
 
 .navbar-brand{
   padding: 0;
@@ -835,7 +854,7 @@ select{
   .video-reciclagem{
     width: 100%; /* Ajusta a largura da imagem para ocupar 100% do container */
     max-width: 100%; /* Garante que não ultrapasse os limites do container */
-    height: auto; /* Mantém a proporção da imagem */
+    height: 200px; /* Mantém a proporção da imagem */
     display: block; /* Remove possíveis comportamentos inline indesejados */
     margin: 0 auto; /* Centraliza a imagem dentro do container, se necessário */
   }
